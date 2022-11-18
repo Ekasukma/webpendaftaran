@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2 class="description">Form Data Kamu!! Mohon Diisi Dengan Benar</h2>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Tanggal Lahir:</label>
+				<input type="text" name="tanggal" id="tanggal" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Daftar" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var tanggal = document.getElementById("tanggal").value;
+		var email = document.getElementById("email").value;
+		var alamat = document.getElementById("alamat").value;
+		if (nama != "" && email!="" && alamat !="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+
+	<div class="image">
+		<a href="https://wa.me/+6283114176615" target="_blank"><img src="/assets/foto/download fot.png" style="padding-left: 10px" alt="download" width="130px" height="120px" ></a>
+	</div>
+	<img src="/assets/foto/download (2).png" alt="download" width="102%" height="35px">
+	<p style="padding-left: 650px; margin-top: -35px;">
+		&copy; EkaSukma.com
+	</p>
+</body>
+</html>
